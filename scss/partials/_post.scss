@@ -1,0 +1,109 @@
+.posts-block{
+    max-width: 1000px;
+    
+    .cards{
+        .card{
+            width: 320px;
+            margin-top: 26px;
+            img{
+                width: 100%;
+                max-height: 230px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.single-content-image{
+    img{
+        width: 320px;
+        max-height: 230px;
+        object-fit: cover;
+        border-radius: 10px;
+
+        @media #{$md} {
+            width: 1000px;
+            max-height: 557px;
+            
+        }
+    }
+}
+
+.single-main-content{
+    margin-right: 16px;
+    margin-left: 16px;
+    max-width: 1000px;
+
+    @media #{$lg} {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /* รูปแบบสำหรับแท็ก h1 */
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  /* รูปแบบสำหรับแท็ก h2 */
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 8px;
+  }
+  
+  /* รูปแบบสำหรับแท็ก h3 */
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 6px;
+  }
+  
+  /* รูปแบบสำหรับแท็ก h4 */
+  h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 4px;
+  }
+  
+  /* รูปแบบสำหรับแท็ก h5 */
+  h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 2px;
+  }
+  
+  /* รูปแบบสำหรับแท็ก h6 */
+  h6 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 2px;
+  }
+  
+  /* รูปแบบสำหรับแท็ก p */
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    margin-bottom: 12px;
+  }
+  
+  /* รูปแบบสำหรับแท็ก a */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* รูปแบบสำหรับลิงก์ที่ถูกคลิก */
+  a:hover {
+    text-decoration: underline;
+  }
+}

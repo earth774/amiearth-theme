@@ -1,0 +1,11 @@
+.header{
+    max-width: 972px;
+    .site-navifation{
+        display: flex;
+        justify-content: space-evenly;
+
+        a{
+            @extend .color-info;
+        }
+    }
+}
