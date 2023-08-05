@@ -94,6 +94,7 @@ h1 {
     line-height: 1.5;
     color: #000;
     margin-bottom: 12px;
+    overflow: auto;
   }
   
   /* รูปแบบสำหรับแท็ก a */
@@ -105,5 +106,11 @@ h1 {
   /* รูปแบบสำหรับลิงก์ที่ถูกคลิก */
   a:hover {
     text-decoration: underline;
+  }
+
+  ol, ul {
+    list-style: auto;
+    margin: 10px;
+    padding: 10px;
   }
 }
