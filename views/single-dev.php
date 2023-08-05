@@ -17,7 +17,7 @@ $related = new WP_Query(array(
                 <span>•</span>
                 <span>
                     <?php $categories = get_the_category(); ?>
-                    <a class="color-info" href="/life">
+                    <a class="color-info" href="/dev">
                         <?= "#{$categories[0]->name}" ?>
                     </a>
                 </span>
