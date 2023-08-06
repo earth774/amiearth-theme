@@ -50,6 +50,7 @@ function wp_theme_register_script()
 	 */
 	wp_enqueue_style('wp-vendor', get_theme_file_uri('css/vendor/vendor.css'), array(), '1.0.0');
 	wp_enqueue_style('wp-style', get_stylesheet_uri(), array(), '1.0.0');
+	wp_enqueue_style('prism-css', 'https://cdn.jsdelivr.net/npm/prismjs@1.28.0/themes/prism.min.css', array(), '1.28.0');
 
 	/**
 	 * Register js script file(js/client.js) 
@@ -58,7 +59,7 @@ function wp_theme_register_script()
 	wp_register_script('wp-vendor', get_theme_file_uri('/js/vendor/vendor.js'), array('jquery'), '1.0.0', true);
 	// wp_register_script('wp-client', get_theme_file_uri('/js/compiled.js'), array('jquery'), rand(1, 99999), true);
 	wp_register_script('wp-client', get_theme_file_uri('/js/compiled.js'), array('jquery'), '1.0.0', true);
-
+    wp_enqueue_script('prism-js', 'https://cdn.jsdelivr.net/npm/prismjs@1.28.0/prism.min.js', array(), '1.28.0', true);
 	/**
 	 * Uncomment if you want to pass an php variebles to js-script
 	 * for example, you can use homeURL in main.js(its return root url).
