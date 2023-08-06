@@ -50,8 +50,7 @@ function wp_theme_register_script()
 	 */
 	wp_enqueue_style('wp-vendor', get_theme_file_uri('css/vendor/vendor.css'), array(), '1.0.0');
 	wp_enqueue_style('wp-style', get_stylesheet_uri(), array(), '1.0.0');
-	wp_enqueue_style('prism-css', 'https://cdn.jsdelivr.net/npm/prismjs@1.28.0/themes/prism.min.css', array(), '1.28.0');
-
+	wp_enqueue_style('prism-css', 'https://cdn.jsdelivr.net/npm/prismjs@1.28.0/themes/prism-okaidia.min.css', array(), '1.28.0');
 	/**
 	 * Register js script file(js/client.js) 
 	 * dependency on jQuery, and place this before close body tag
