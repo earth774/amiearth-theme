@@ -1,7 +1,7 @@
 <?php
 /* Template Name: Dev Template */
 
-$paged = (get_query_var('page')) ? get_query_var('page') : 1;
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $posts = new WP_Query(array(
     'category_name' => 'Dev',
     'posts_per_page' => 6,
