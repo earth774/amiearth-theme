@@ -1,5 +1,3 @@
-<?php var_dump($posts); ?>
-
 <!-- Blog -->
 <section class="posts-block mx-auto mt-8">
     <?php if ($posts->have_posts()) : ?>
