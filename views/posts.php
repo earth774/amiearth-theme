@@ -5,8 +5,14 @@
     <?php if ($posts->have_posts()) : ?>
         <div class="cards grid justify-items-center grid-cols-1 gap-1 md:grid-cols-2 md:gap-2 lg:grid-cols-3 lg:gap-3 ">
             <?php while ($posts->have_posts()) : $posts->the_post(); ?>
+                <?php 
+                        $categories = get_the_category(); 
+                        if(count($categories) == 0):
+                            continue;
+                    ?>
+                <?php endif; ?>
+                
                 <div class="card">
-                    <?php $categories = get_the_category(); ?>
                     <a class="color-info" href="<?php
                                                 if ($categories[0]->name == 'Dev') {
                                                     echo '/dev';
