@@ -1,3 +1,4 @@
+<?php get_header() ?>
 <?php
 /* Template Name: Dev Template */
 
@@ -11,3 +12,7 @@ $posts = new WP_Query(array(
 ));
 
 get_template_part('views/posts');
+
+?>
+
+<?php get_footer() ?>

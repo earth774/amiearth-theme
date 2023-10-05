@@ -1,3 +1,4 @@
+<?php get_header() ?>
 <?php
 /* Template Name: Life Template */
 
@@ -10,3 +11,7 @@ $posts = new WP_Query(array(
     'order'         => 'DESC'
 ));
 get_template_part('views/posts');
+
+?>
+
+<?php get_footer() ?>

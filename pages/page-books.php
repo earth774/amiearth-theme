@@ -1,3 +1,4 @@
+<?php get_header() ?>
 <?php
 /* Template Name: Books Template */
 
@@ -9,4 +10,9 @@ $posts = new WP_Query(array(
     'orderby'       => 'date',
     'order'         => 'DESC'
 ));
+
 get_template_part('views/posts');
+
+?>
+
+<?php get_footer() ?>
