@@ -1,4 +1,4 @@
-<?php get_header() ?>
+<?php var_dump($posts); ?>
 
 <!-- Blog -->
 <section class="posts-block mx-auto mt-8">
@@ -47,5 +47,3 @@
         <?php endif; ?>
     <?php endif; ?>
 </section>
-
-<?php get_footer() ?>
