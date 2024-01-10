@@ -1,0 +1,201 @@
+.comment {
+    margin-right: 16px;
+    margin-left: 16px;
+    max-width: 1000px;
+
+    @media #{$lg} {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /* รูปแบบสำหรับแท็ก h1 */
+    h1 {
+        font-size: 32px;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 10px;
+    }
+
+    /* รูปแบบสำหรับแท็ก h2 */
+    h2 {
+        font-size: 28px;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 8px;
+    }
+
+    /* รูปแบบสำหรับแท็ก h3 */
+    h3 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 6px;
+    }
+
+    /* รูปแบบสำหรับแท็ก h4 */
+    h4 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 4px;
+    }
+
+    /* รูปแบบสำหรับแท็ก h5 */
+    h5 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 2px;
+    }
+
+    /* รูปแบบสำหรับแท็ก h6 */
+    h6 {
+        font-size: 14px;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 2px;
+    }
+
+    /* รูปแบบสำหรับแท็ก p */
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #000;
+        margin-bottom: 12px;
+        overflow: auto;
+    }
+
+    /* รูปแบบสำหรับแท็ก a */
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    /* รูปแบบสำหรับลิงก์ที่ถูกคลิก */
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.comments-area {
+    margin: 32px 0 48px;
+
+    @media #{$lg} {
+        margin: 64px 0 48px;
+    }
+}
+
+.comments-title {
+    font-size: 20px;
+    margin: 0;
+
+    i {
+        font-size: 1.6em;
+        position: relative;
+        top: 4px;
+        margin: 0 4px 0 0;
+    }
+}
+
+.comment-list {
+    padding: 0;
+    margin: 16px 0 24px;
+    list-style: none !important;
+
+    >li {
+        padding: 16px;
+        background-color: $white;
+        border: 1px solid $grey;
+        border-top: 3px solid $blue;
+        margin: 0 0 16px;
+
+        .comment-author {
+            display: block;
+            margin: 0 0 4px;
+
+            img {
+                border-radius: 50em;
+                margin: 0 8px 0 0;
+                display: inline-block;
+            }
+
+            .fn,
+            .says {
+                @extend .ci-text;
+                font-size: 14px;
+            }
+        }
+
+        .comment-metadata {
+            font-size: 12px;
+            margin: 0 0 8px;
+
+            a {
+                color: $black;
+            }
+        }
+
+        >.comment-body {
+            position: relative;
+
+            .comment-content {
+                padding: 16px;
+                background-color: $grey;
+
+                p {
+                    margin: 0 0 16px;
+                    font-size: 14px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .reply {
+            font-size: 12px;
+            position: absolute;
+            bottom: 4px;
+            right: 8px;
+            z-index: 1;
+        }
+
+        .children {
+            margin: 8px 0 0 0;
+            list-style: none;
+            background-color: $white;
+            padding: 16px;
+            border: 1px solid $grey;
+
+            >li {
+                margin: 0 0 16px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            .comment-content {
+                p {
+                    font-size: 14px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.comment-respond {
+    @media #{$lg} {
+        border-top: 1px solid $grey;
+        padding: 32px 0 0;
+    }
+
+    .comment-reply-title {
+        font-size: 20px;
+    }
+}

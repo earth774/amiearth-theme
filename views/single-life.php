@@ -39,4 +39,12 @@ $related = new WP_Query(array(
     <?php endwhile; ?>
 <?php endif; ?>
 
+<section class="single-content-block">
+    <article class="comment mx-auto mt-9">
+        <?php
+            comments_template();
+        ?>
+    </article>
+</section>
+
 <?php get_footer(); ?>
