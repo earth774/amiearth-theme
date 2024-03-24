@@ -6,7 +6,7 @@ get_header();
 <main class="flex-auto">
   <div class="lg:pl-20 mt-4">
     <div class="max-w-xs px-2.5 lg:max-w-none mx-auto">
-      <img alt="" loading="lazy" width="300" height="300" decoding="async" data-nimg="1" class="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800 mx-auto" sizes="(min-width: 1024px) 32rem, 20rem" src="http://amiearth.com/wp-content/uploads/2023/10/69751087_2815400091820682_3763227611493302272_n.webp" style="color: transparent" />
+      <img alt="" loading="lazy" width="300" height="300" decoding="async" data-nimg="1" class="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800 mx-auto" sizes="(min-width: 1024px) 32rem, 20rem" src="http://amiearth.com/wp-content/uploads/2024/03/69751087_2815400091820682_3763227611493302272_n.webp" style="color: transparent" />
     </div>
   </div>
 
